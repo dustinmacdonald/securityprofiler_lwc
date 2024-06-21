@@ -1,0 +1,23 @@
+<template>
+        <lightning-card>
+            <h3 slot="title">
+                <lightning-icon icon-name="utility:lock" size="small"></lightning-icon> Security Profiler
+            </h3>
+    
+            <div class="slds-var-m-left_xxx-small">
+                <div class="slds-card__body slds-card__body_inner">
+                <lightning-combobox
+            name="profile"
+            label="Profile"
+            value={chosenProfile}   
+            placeholder="Select Profile"
+            options={ProfilesList}
+            onchange={handleChange} >
+        </lightning-combobox>
+        </div>
+    <div class="slds-card__body slds-card__body_inner">        
+    <lightning-button label="Generate" title="Generate FLS" onclick={handleClick} class="slds-var-m-left_xxx-small"></lightning-button>
+    </div>
+    </div>
+    </lightning-card>
+</template>

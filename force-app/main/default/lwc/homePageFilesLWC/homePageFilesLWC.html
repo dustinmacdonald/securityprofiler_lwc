@@ -1,0 +1,20 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-card>
+        <h3 slot="title">
+            <lightning-icon icon-name="utility:file" size="small"></lightning-icon> Release Notes
+        </h3>
+                <div class="slds-var-m-around_medium">
+                        <div style="height: 300px;">
+                            <lightning-datatable
+                                    key-field="id"
+                                    data={values}
+                                    columns={columns}
+                                    sorted-by={sortBy}
+                                    sorted-direction={sortDirection}
+                                    onsort={doSorting}>
+                            </lightning-datatable>
+                        </div>
+            </div>
+</lightning-card>
+</template>
